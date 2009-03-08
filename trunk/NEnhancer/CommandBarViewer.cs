@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Text;
 using System.Windows.Forms;
 using EnvDTE;
 using EnvDTE80;
@@ -23,43 +25,25 @@ namespace NEnhancer
         {
             CommandBars cmdBars = (DTEObject.CommandBars as CommandBars);
 
+            #region SortedNames
+
+            List<string> names = new List<string>(cmdBars.Count);
             foreach (CommandBar bar in cmdBars)
             {
+                names.Add(bar.Name);
+            }
+
+            names.Sort();
+            foreach (string name in names)
+            {
                 TreeNode node = new TreeNode();
-                node.Text = bar.Name;
+                node.Text = name;
                 node.Tag = "bar";
                 // Add a dummy node
                 node.Nodes.Add("dummyNode");
 
                 tvCommandBars.Nodes.Add(node);
             }
-
-            // TODO: Find node by text, Or sort by name.
-            //tvCommandBars.Select();
-            //tvCommandBars.SelectedNode = tvCommandBars.Nodes[tvCommandBars.Nodes.Count - 1];
-
-            #region SortedNames
-
-            // TODO:
-            //SortedList<string, int> names = new SortedList<string, int>(cmdBars.Count);
-            //foreach (CommandBar bar in cmdBars)
-            //{
-            //    if (!names.ContainsKey(bar.Name))
-            //    {
-            //        names.Add(bar.Name, bar.Id);
-            //    }
-            //}
-
-            //foreach (string name in names.Keys)
-            //{
-            //    TreeNode node = new TreeNode();
-            //    node.Text = name;
-            //    node.Tag = "bar";
-            //    // Add a dummy node
-            //    node.Nodes.Add("dummyNode");
-
-            //    tvCommandBars.Nodes.Add(node);
-            //}
 
             #endregion
         }
@@ -76,6 +60,25 @@ namespace NEnhancer
             else if (nodeType == "popup")
             {
                 FillPopup(node);
+            }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            if (dlgSave.ShowDialog() == DialogResult.OK)
+            {
+                StringBuilder result = new StringBuilder();
+                foreach (TreeNode node in tvCommandBars.Nodes)
+                {
+                    result.AppendLine(node.Text);
+                }
+
+                File.WriteAllText(dlgSave.FileName, result.ToString());
             }
         }
 

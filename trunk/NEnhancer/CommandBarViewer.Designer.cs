@@ -30,6 +30,9 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tvCommandBars = new System.Windows.Forms.TreeView();
+            this.btnExport = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.dlgSave = new System.Windows.Forms.SaveFileDialog();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,11 +54,33 @@
             this.tvCommandBars.TabIndex = 0;
             this.tvCommandBars.BeforeExpand += new System.Windows.Forms.TreeViewCancelEventHandler(this.tvCommandBars_BeforeExpand);
             // 
+            // btnExport
+            // 
+            this.btnExport.Location = new System.Drawing.Point(51, 428);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(144, 23);
+            this.btnExport.TabIndex = 1;
+            this.btnExport.Text = "Export CommandBars";
+            this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Location = new System.Drawing.Point(261, 428);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.TabIndex = 2;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // CommandBarViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(452, 471);
+            this.ClientSize = new System.Drawing.Size(452, 460);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnExport);
             this.Controls.Add(this.groupBox1);
             this.Name = "CommandBarViewer";
             this.Text = "CommandBar Viewer";
@@ -69,5 +94,8 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TreeView tvCommandBars;
+        private System.Windows.Forms.Button btnExport;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.SaveFileDialog dlgSave;
     }
 }
