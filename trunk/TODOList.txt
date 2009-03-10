@@ -1,0 +1,20 @@
+2009-03-10
+1. CodeConverter
+
+Solution -> Project -> Item
+
+Project:
+	References;
+	Folders;
+	Items;
+	
+Item: 
+	Complex Items, such as aspx, ascx, windows form, resx, xsd...
+	
+Add proj filter: 
+	for the projects with same language to the target language, ignore them;
+	for the projects with different languages, provide filter.
+	
+2. Simple Code Generator
+
+This generator can be regarded as a "complex project template" or "solution template".
