@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="NEnhancer.BusinessLogic.CodeConverter.SolutionNode">
+    <Position X="4.75" Y="0.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAIAAAAAAAAQAQAAAAEAAAAAAAAFAAAA=</HashCode>
+      <FileName>CodeConverter\SolutionNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NEnhancer.BusinessLogic.CodeConverter.SolutionFolderNode">
+    <Position X="2.75" Y="1.75" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAQACAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>CodeConverter\SolutionFolderNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NEnhancer.BusinessLogic.CodeConverter.ProjectNode">
+    <Position X="6.75" Y="1.75" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAIAAAAAAAAQAAACQAAAggAAAIABAAAA=</HashCode>
+      <FileName>CodeConverter\ProjectNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NEnhancer.BusinessLogic.CodeConverter.ReferenceNode">
+    <Position X="2.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAQAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>CodeConverter\ReferenceNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NEnhancer.BusinessLogic.CodeConverter.FolderNode">
+    <Position X="4.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAACAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>CodeConverter\FolderNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NEnhancer.BusinessLogic.CodeConverter.FileNode">
+    <Position X="8.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>CodeConverter\FileNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="SimSun" Size="9" />
+</ClassDiagram>
