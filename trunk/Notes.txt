@@ -1,0 +1,8 @@
+1. Add Reference
+{
+	VSProject2 vsProj = proj.Object as VSProject2;
+    vsProj.References.Add(@"C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll");
+}
+So we can just use the path to add a reference.
+
+2. 
