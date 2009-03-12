@@ -18,3 +18,24 @@ Add proj filter:
 2. Simple Code Generator
 
 This generator can be regarded as a "complex project template" or "solution template".
+
+2009-03-12
+1. Simple Code Generator
+Sigh, the converter is very complex to implement in one or two days...
+
+So, use the generator(NPetshop struct) as the sample program. (CommandName: NEnhancer.Connect.NPetshopSlnGenerator)
+
+a. Create a sln, the solution name will be used to name the projects, such as SolutionName.Domain
+
+b. Create a folder(External-bin) to store the dlls, then add a corresponding solution folder
+
+c. Create the projects by this order: *.Domain, *.Persistence, *.Service, *.NPetshop.Presentation, *.Web
+
+	for each proj in projects
+		AddReferences; (dll ref & proj ref)
+		AddFolders; (especially for *.Web proj, add Maps & UserControls folders)
+		AddFiles; (pay special attention to web.config file, add log4net config sections)
+		
+d. Save solution. (Consider building the sln?)
+
+Although it's very simple, it shows the primary manipulations on Solution Explorer. We can create CodeGenerator this way.
