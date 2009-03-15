@@ -11,4 +11,7 @@
     <StartArguments>/resetaddin NEnhancer.Connect</StartArguments>
     <StartAction>Program</StartAction>
   </PropertyGroup>
+  <PropertyGroup>
+    <ProjectView>ProjectFiles</ProjectView>
+  </PropertyGroup>
 </Project>

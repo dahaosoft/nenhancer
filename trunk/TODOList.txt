@@ -20,7 +20,7 @@ Add proj filter:
 This generator can be regarded as a "complex project template" or "solution template".
 
 2009-03-12
-1. Simple Code Generator
+1. Simple Code Generator (Completed on 03/15/2009)
 Sigh, the converter is very complex to implement in one or two days...
 
 So, use the generator(NPetshop struct) as the sample program. (CommandName: NEnhancer.Connect.NPetshopSlnGenerator)
@@ -29,7 +29,7 @@ a. Create a sln, the solution name will be used to name the projects, such as So
 
 b. Create a folder(External-bin) to store the dlls, then add a corresponding solution folder
 
-c. Create the projects by this order: *.Domain, *.Persistence, *.Service, *.NPetshop.Presentation, *.Web
+c. Create the projects by this order: *.Domain, *.Persistence, *.Service, *.Presentation, *.Web
 
 	for each proj in projects
 		AddReferences; (dll ref & proj ref)
@@ -38,4 +38,20 @@ c. Create the projects by this order: *.Domain, *.Persistence, *.Service, *.NPet
 		
 d. Save solution. (Consider building the sln?)
 
-Although it's very simple, it shows the primary manipulations on Solution Explorer. We can create CodeGenerator this way.
+Although it's very simple, it does show the primary manipulations on Solution/Project/Item. We can create CodeGenerator by this way.
+
+2009-03-15
+
+From ClingingBoy:
+public int IntProperty {get; set; } -> .NET 2.0 Style and vice versa.
+
+Part 6 - UIHierachy(Collapse All Projects)
+
+a. Solution Explorer Context Menu;
+
+b. UIHierachy;
+
+c. UIHierachy <-> Project/Item
+
+Part 7 - 
+
