@@ -16,7 +16,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <Optimize>false</Optimize>
-    <OutputPath>bin\</OutputPath>
+    <OutputPath>.\</OutputPath>
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>4</WarningLevel>
@@ -72,6 +72,12 @@
     <Compile Include="AddInForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="NPetshopSlnGenerator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NPetshopSlnGenerator.Designer.cs">
+      <DependentUpon>NPetshopSlnGenerator.cs</DependentUpon>
+    </Compile>
     <Compile Include="SolutionTree.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CommandBarViewer.resx">
       <DependentUpon>CommandBarViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NPetshopSlnGenerator.resx">
+      <DependentUpon>NPetshopSlnGenerator.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="SolutionTree.resx">
@@ -149,6 +159,10 @@
       <Project>{75933986-723C-41B4-925C-404005439ABD}</Project>
       <Name>NEnhancer.BusinessLogic</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ibatis-bin\" />
+    <Folder Include="ibatis-config\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
   <PropertyGroup>
