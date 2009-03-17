@@ -5,4 +5,78 @@
 }
 So we can just use the path to add a reference.
 
-2. 
+2. Collapse All Projects
+protected UIHierarchy SolutionExplorerNode
+{
+    get
+    {
+        return _applicationObject.ToolWindows.SolutionExplorer;
+    }
+}
+
+/// <summary>
+/// Gets project nodes.
+/// </summary>
+public List<UIHierarchyItem> GetProjectNodes(Solution solution)
+{
+    string solutionName = solution.Properties.Item("Name").Value.ToString();
+    return GetProjectNodes(SolutionExplorerNode.GetItem(solutionName).UIHierarchyItems);
+}
+
+/// <summary>
+/// Gets the project nodes.
+/// </summary>
+/// <param name="root">The root.</param>
+/// <returns></returns>
+public List<UIHierarchyItem> GetProjectNodes(UIHierarchyItems topLevelItems)
+{
+    List<UIHierarchyItem> projects = new List<UIHierarchyItem>();
+    foreach (UIHierarchyItem item in topLevelItems)
+    {
+        if (IsProjectItem(item))
+        {
+            projects.Add(item);
+        }
+        else if (IsSolutionFolder(item))
+        {
+            GetProjectNodesInSolutionFolder(projects, item);
+        }
+    }
+
+    return projects;
+}
+
+private void GetProjectNodesInSolutionFolder(List<UIHierarchyItem> projects, UIHierarchyItem item)
+{
+    if (!IsSolutionFolder(item)) { return; }
+
+    foreach (UIHierarchyItem subItem in item.UIHierarchyItems)
+    {
+        if (IsProjectItem(subItem))
+        {
+            projects.Add(subItem);
+        }
+    }
+}
+
+private bool IsSolutionFolder(UIHierarchyItem item)
+{
+    return ((item.Object is Project) && 
+        ((item.Object as Project).Kind == ProjectKinds.vsProjectKindSolutionFolder));
+}
+
+private bool IsProjectItem(UIHierarchyItem item)
+{
+    return IsDirectProjectNode(item) || IsProjectNodeInSolutionFolder(item);
+}
+
+private bool IsDirectProjectNode(UIHierarchyItem item)
+{
+    return ((item.Object is Project) && ((item.Object as Project).Kind != ProjectKinds.vsProjectKindSolutionFolder));
+}
+
+private bool IsProjectNodeInSolutionFolder(UIHierarchyItem item)
+{
+    return (item.Object is ProjectItem && ((ProjectItem)item.Object).Object is Project &&
+                ((Project)((ProjectItem)item.Object).Object).Kind != ProjectKinds.vsProjectKindSolutionFolder);
+}
