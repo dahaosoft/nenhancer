@@ -43,9 +43,9 @@ Although it's very simple, it does show the primary manipulations on Solution/Pr
 2009-03-15
 
 From ClingingBoy:
-public int IntProperty {get; set; } -> .NET 2.0 Style and vice versa.
+public int IntProperty { get; set; } -> .NET 2.0 Style and vice versa.
 
-Part 6 - UIHierachy(Collapse All Projects)
+Part 6 - UIHierachy(Collapse All Projects) (Completed on 03/17/2009)
 
 a. Solution Explorer Context Menu;
 
@@ -53,5 +53,20 @@ b. UIHierachy;
 
 c. UIHierachy <-> Project/Item
 
-Part 7 - 
+d. Refer to PowerCommands
 
+2009-03-17
+
+Part 7 - ClingingBoy's requirement / Custom Surround With
+Manipulate TextEditor:
+
+a. Text Editor Context Menu;
+
+b. RegularExpression
+
+
+Part 8 - Code Model (Enhance Part 5)
+
+a. Code Model
+
+b. Text Template (StringTemplate or T4)
