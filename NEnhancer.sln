@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{F65F2FB5-3
 		TODOList.txt = TODOList.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NEnhancer.BusinessLogic", "NEnhancer.BusinessLogic\NEnhancer.BusinessLogic.csproj", "{75933986-723C-41B4-925C-404005439ABD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NEnhancer.Logic", "NEnhancer.BusinessLogic\NEnhancer.Logic.csproj", "{75933986-723C-41B4-925C-404005439ABD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

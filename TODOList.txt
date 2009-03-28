@@ -60,13 +60,17 @@ d. Refer to PowerCommands
 Part 7 - ClingingBoy's requirement / Custom Surround With
 Manipulate TextEditor:
 
-a. Text Editor Context Menu;
+a. Text Editor Context Menu; Popup Menu; Add a menuitem by a new way;
 
 b. RegularExpression
 
+c. Options Page(Rule of naming, with underscore?)
 
-Part 8 - Code Model (Enhance Part 5)
+
+Part 8 - Code Model or Using Sorter (Enhance Part 5)
 
 a. Code Model
 
 b. Text Template (StringTemplate or T4)
+
+c. PowerCommands
