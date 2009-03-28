@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("NEnhancer.BusinessLogic")]
+[assembly: AssemblyTitle("NEnhancer.Logic")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Sun")]
-[assembly: AssemblyProduct("NEnhancer.BusinessLogic")]
+[assembly: AssemblyProduct("NEnhancer.Logic")]
 [assembly: AssemblyCopyright("Copyright © Sun 2009")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

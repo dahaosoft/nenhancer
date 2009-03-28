@@ -155,9 +155,13 @@
     <Content Include="NEnhancer.AddIn" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\NEnhancer.BusinessLogic\NEnhancer.BusinessLogic.csproj">
+    <ProjectReference Include="..\NEnhancer.BusinessLogic\NEnhancer.Logic.csproj">
       <Project>{75933986-723C-41B4-925C-404005439ABD}</Project>
-      <Name>NEnhancer.BusinessLogic</Name>
+      <Name>NEnhancer.Logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NEnhancer.Common\NEnhancer.Common.csproj">
+      <Project>{CBA4F36F-0727-4B0B-83A0-4660E8095397}</Project>
+      <Name>NEnhancer.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

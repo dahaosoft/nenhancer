@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="NEnhancer.BusinessLogic.CodeConverter.SolutionNode">
+  <Class Name="NEnhancer.Logic.CodeConverter.SolutionNode">
     <Position X="4.75" Y="0.5" Width="1.75" />
     <Compartments>
       <Compartment Name="Properties" Collapsed="true" />
@@ -11,7 +11,7 @@
       <FileName>CodeConverter\SolutionNode.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NEnhancer.BusinessLogic.CodeConverter.SolutionFolderNode">
+  <Class Name="NEnhancer.Logic.CodeConverter.SolutionFolderNode">
     <Position X="2.75" Y="1.75" Width="2" />
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
@@ -21,7 +21,7 @@
       <FileName>CodeConverter\SolutionFolderNode.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NEnhancer.BusinessLogic.CodeConverter.ProjectNode">
+  <Class Name="NEnhancer.Logic.CodeConverter.ProjectNode">
     <Position X="6.75" Y="1.75" Width="1.75" />
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
@@ -31,21 +31,21 @@
       <FileName>CodeConverter\ProjectNode.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NEnhancer.BusinessLogic.CodeConverter.ReferenceNode">
+  <Class Name="NEnhancer.Logic.CodeConverter.ReferenceNode">
     <Position X="2.5" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAIAAAAAAAQAAAAAAAAAAQAAAAAAAAA=</HashCode>
       <FileName>CodeConverter\ReferenceNode.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NEnhancer.BusinessLogic.CodeConverter.FolderNode">
+  <Class Name="NEnhancer.Logic.CodeConverter.FolderNode">
     <Position X="4.75" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAACAAAAAAAAAAABAAAA=</HashCode>
       <FileName>CodeConverter\FolderNode.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NEnhancer.BusinessLogic.CodeConverter.FileNode">
+  <Class Name="NEnhancer.Logic.CodeConverter.FileNode">
     <Position X="8.5" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>

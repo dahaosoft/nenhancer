@@ -8,7 +8,7 @@ using System.Windows.Forms;
 using EnvDTE;
 using EnvDTE80;
 using EnvDTE90;
-using NEnhancer.BusinessLogic.CodeConverter;
+using NEnhancer.Logic.CodeConverter;
 using VSLangProj;
 using VSLangProj80;
 

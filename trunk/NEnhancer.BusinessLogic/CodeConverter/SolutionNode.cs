@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.IO;
 
-namespace NEnhancer.BusinessLogic.CodeConverter
+namespace NEnhancer.Logic.CodeConverter
 {
     public class SolutionNode
     {

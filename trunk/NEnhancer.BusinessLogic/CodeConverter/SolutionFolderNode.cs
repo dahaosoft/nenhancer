@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NEnhancer.BusinessLogic.CodeConverter
+namespace NEnhancer.Logic.CodeConverter
 {
     public class SolutionFolderNode
     {
