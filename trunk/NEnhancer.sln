@@ -17,8 +17,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{F65F2FB5-3
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NEnhancer.Logic", "NEnhancer.BusinessLogic\NEnhancer.Logic.csproj", "{75933986-723C-41B4-925C-404005439ABD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UISamples", "UISamples\UISamples.csproj", "{AE68C2E4-BE09-4D33-A997-A6ADEDD6F96F}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,9 +43,6 @@ Global
 		{75933986-723C-41B4-925C-404005439ABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75933986-723C-41B4-925C-404005439ABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75933986-723C-41B4-925C-404005439ABD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AE68C2E4-BE09-4D33-A997-A6ADEDD6F96F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AE68C2E4-BE09-4D33-A997-A6ADEDD6F96F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AE68C2E4-BE09-4D33-A997-A6ADEDD6F96F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
