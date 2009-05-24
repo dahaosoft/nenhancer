@@ -74,3 +74,45 @@ a. Code Model
 b. Text Template (StringTemplate or T4)
 
 c. PowerCommands
+
+2009-03-28
+
+Part 7 - Code Template
+http://www.codeproject.com/KB/macros/codetemplatenet.aspx
+
+built-in parameters:
+#Today;MM-dd-yyyy#
+#Now#
+#Guid#
+#Solution#
+#Project#
+#File#
+
+2009-04-01
+
+Part 8 - ProjectManager
+
+a. Text Editor Context Menu; Popup Menu;
+
+b. RegularExpression
+
+field format: 
+	private int id;
+	
+normal property format:
+	public int Id
+	{
+		get { return id; }
+		set { id = value; }
+	}
+	
+auto property format:
+	public int Id { get; [private] set; }
+	
+2009-05-07
+Custom toolwindow; Shortcut list; OK
+Options Page; Search In...;  OK
+Custom icon; Office icon; OK
+Command status; XML; Cancel
+Add shortcut to a command; Cancel
+

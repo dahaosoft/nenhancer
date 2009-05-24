@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{17F07889-2904-4ABC-AF81-1EC6CF7352C5}</ProjectGuid>
     <OutputType>Library</OutputType>
@@ -78,11 +78,23 @@
     <Compile Include="NPetshopSlnGenerator.Designer.cs">
       <DependentUpon>NPetshopSlnGenerator.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShortcutListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ShortcutListControl.Designer.cs">
+      <DependentUpon>ShortcutListControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="SolutionTree.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SolutionTree.Designer.cs">
       <DependentUpon>SolutionTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SearchTextOptionsPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SearchTextOptionsPage.Designer.cs">
+      <DependentUpon>SearchTextOptionsPage.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -101,9 +113,15 @@
       <DependentUpon>NPetshopSlnGenerator.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="ShortcutListControl.resx">
+      <DependentUpon>ShortcutListControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SolutionTree.resx">
       <DependentUpon>SolutionTree.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SearchTextOptionsPage.resx">
+      <DependentUpon>SearchTextOptionsPage.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -149,9 +167,11 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Addins\NEnhancer - For Testing.AddIn">
+    <Content Include="C:\Documents and Settings\programmer\My Documents\Visual Studio 2008\Addins\NEnhancer - For Testing.AddIn">
       <Link>NEnhancer - For Testing.AddIn</Link>
     </Content>
+    <Content Include="config\codeTemplates.xml" />
+    <Content Include="config\searchEngines.xml" />
     <Content Include="NEnhancer.AddIn" />
   </ItemGroup>
   <ItemGroup>
