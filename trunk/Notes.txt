@@ -80,3 +80,7 @@ private bool IsProjectNodeInSolutionFolder(UIHierarchyItem item)
     return (item.Object is ProjectItem && ((ProjectItem)item.Object).Object is Project &&
                 ((Project)((ProjectItem)item.Object).Object).Kind != ProjectKinds.vsProjectKindSolutionFolder);
 }
+
+3. Search this
+MSDN: http://social.msdn.microsoft.com/Search/en-AU/?query={keyword}&ac=8
+Google: http://www.google.cn/search?source=igchina&hl=zh-CN&q={keyword}&btnG=Google+%E6%90%9C%E7%B4%A2&aq=f
