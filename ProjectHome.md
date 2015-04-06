@@ -1,0 +1,1 @@
+As .NET developers, we use Visual Studio everyday. Though it is very powerful, there are some features we can add to enhance it. This is why I start this project.
